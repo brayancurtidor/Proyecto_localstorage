@@ -1,0 +1,61 @@
+<!-- jose Curtidor -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <div id="contenido">
+        <div class="container">
+
+            <h1>Local Storage- Calendario de actividades</h1>
+            <div class="row">
+                <div class="six columns">
+                    <label for="tweet">Tareas:</label>
+                    <form  id="formulario">
+                            <label for="tweet"></label>
+                            <textarea id="tweet" class="u-full-width"></textarea>
+
+                            <label for="tweet">Fecha</label>
+                            <input id="tweet-fecha" class="u-full-width" type="date" >
+
+                            <label for="tweet">Hora</label>
+                            <input id="tweet-hora" class="u-full-width" type="time" >
+
+                            <input type="submit" class="button u-full-width button-primary" value="Agregar">
+                    </form>
+                </div>
+                <div class="six columns" >
+                    <h2>Mis Tareas</h2>
+                   
+                        <table   class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Tarea</th>
+                                    <th>fecha</th>
+                                    <th>hora</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="lista-tweets">
+
+                            </tbody>
+                        </table>
+                   
+                </div>
+            </div>
+
+        </div>
+    </div> <!--#contenido-->
+
+    <script src="js/app.js"></script>
+</body>
+</html>
